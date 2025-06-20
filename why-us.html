@@ -17,7 +17,40 @@
 <body>
   <div class="wrapper">    <!-- =========================
         Header
-    =========================== -->    <div data-include="header.html"></div>
+    <!-- =========================
+        Header
+    =========================== -->
+    <header id="header" class="header header-white">
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo/New Logo - Map My Visa.png" class="logo-light" alt="MapMyVisa Logo">
+            <img src="assets/images/logo/New Logo - Map My Visa.png" class="logo-dark" alt="MapMyVisa Logo">
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item"><a href="index.html" class="nav__item-link">Home</a></li>              <li class="nav__item">
+                <a href="about-us.html" class="nav__item-link active">About</a>
+              </li>
+              <li class="nav__item"><a href="services.html" class="nav__item-link">Services</a></li>
+              <li class="nav__item"><a href="gallery.html" class="nav__item-link">Gallery</a></li>
+              <li class="nav__item"><a href="faqs.html" class="nav__item-link">FAQs</a></li>
+              <li class="nav__item"><a href="contacs.html" class="nav__item-link">Contact</a></li>
+            </ul><!-- /.navbar-nav -->
+          </div><!-- /.navbar-collapse -->
+          <div class="navbar-modules">
+            <ul class="modules__wrapper d-flex align-items-center list-unstyled">
+              <li>
+                <a href="index.html#" class="module__btn module__btn-search"><i class="fa fa-search"></i></a>
+              </li>
+            </ul><!-- /.modules-wrapper -->
+          </div><!-- /.navbar-modules -->
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
 
     <!-- ========================
        page title 
@@ -25,11 +58,9 @@
     <section id="page-title" class="page-title page-title-layout3 text-center bg-overlay bg-parallax">
       <div class="bg-img"><img src="image/office.jpeg" alt="background"></div>
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 offset-xl-2">
+        <div class="row">            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 offset-xl-2">
             <h1 class="pagetitle__heading">Why Choose MapMyVisa?</h1>
             <p class="pagetitle__desc">Expert Visa & Immigration Solutions for Students, Professionals, and Families</p>
-            <a href="request-quote.html" class="btn btn__white">Request A Quote</a>
           </div><!-- /.col-xl-8 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -386,12 +417,9 @@
       </form>
     </div><!-- /.module-search-container -->
 
-    <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
-  </div><!-- /.wrapper -->
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="js/include.js"></script>
+    <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>  </div><!-- /.wrapper -->  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

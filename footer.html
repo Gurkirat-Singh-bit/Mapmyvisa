@@ -144,3 +144,33 @@
         </div><!-- /.container -->
       </div><!-- /.Footer-bottom -->
     </footer><!-- /.Footer -->
+
+    <script>
+  // ======================== Logo Visibility Control ========================
+  (function() {
+    // Wait for DOM
+    document.addEventListener('DOMContentLoaded', function() {
+      var footerLogo = document.querySelector('.footer-logo');
+      var heroSection = document.getElementById('slider1');
+      if (!footerLogo || !heroSection) return;
+
+      // Hide logo initially
+      footerLogo.style.transition = 'opacity 0.4s';
+      footerLogo.style.opacity = '0';
+
+      // Use Intersection Observer to show logo only when hero is out of view
+      var observer = new window.IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            // Hero is visible, hide logo
+            footerLogo.style.opacity = '0';
+          } else {
+            // Hero is out of view, show logo
+            footerLogo.style.opacity = '1';
+          }
+        });
+      }, { threshold: 0 });
+      observer.observe(heroSection);
+    });
+  })();
+</script>

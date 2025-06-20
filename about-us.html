@@ -12,17 +12,50 @@
     href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cPoppins:400,600,700&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/about-us-fix.css" />
+  <script>document.addEventListener('DOMContentLoaded',function(){document.body.classList.add('about-page');});</script>
 </head>
 
-<body>  <div class="wrapper">
-    <!-- Header Include -->
-    <div data-include="header.html"></div>
+<body>  <div class="wrapper">    <!-- =========================
+        Header
+    =========================== -->
+    <header id="header" class="header header-white">
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo/New Logo - Map My Visa.png" class="logo-light" alt="MapMyVisa Logo">
+            <img src="assets/images/logo/New Logo - Map My Visa.png" class="logo-dark" alt="MapMyVisa Logo">
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item"><a href="index.html" class="nav__item-link">Home</a></li>              <li class="nav__item">
+                <a href="about-us.html" class="nav__item-link active">About</a>
+              </li>
+              <li class="nav__item"><a href="services.html" class="nav__item-link">Services</a></li>
+              <li class="nav__item"><a href="gallery.html" class="nav__item-link">Gallery</a></li>
+              <li class="nav__item"><a href="faqs.html" class="nav__item-link">FAQs</a></li>
+              <li class="nav__item"><a href="contacs.html" class="nav__item-link">Contact</a></li>
+            </ul><!-- /.navbar-nav -->
+          </div><!-- /.navbar-collapse -->
+          <div class="navbar-modules">
+            <ul class="modules__wrapper d-flex align-items-center list-unstyled">
+              <li>
+                <a href="index.html#" class="module__btn module__btn-search"><i class="fa fa-search"></i></a>
+              </li>
+            </ul><!-- /.modules-wrapper -->
+          </div><!-- /.navbar-modules -->
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
 
     <!-- ========================
        page title 
     =========================== -->
-    <section id="page-title" class="page-title page-title-layout4 text-center bg-overlay bg-parallax">
-      <div class="bg-img"><img src="image/cityscape.jpeg" alt="background"></div>
+    <section id="page-title" class="page-title page-title-layout4 text-center bg-overlay bg-parallax" style="padding-top: 110px;">
+      <div class="bg-img"><img src="image/world-map.jpeg" alt="background"></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 offset-xl-2">
@@ -55,7 +88,7 @@
             <a href="about-us.html#" class="btn btn__secondary btn__link btn__underlined mb-20">Find your solution</a>
           </div><!-- /.col-lg-6 -->
           <div class="col-sm-12 col-md-9 col-lg-6">
-            <div class="about__img">
+            <div class="about__img" style="margin-top: 150px; padding-bottom: 120px;">
               <img src="image/office.jpeg" alt="about img" class="img-fluid">
               <div class="counter-item-wrapper counters-white">
                 <div class="counter-item">
@@ -72,7 +105,7 @@
       </div><!-- /.container -->
     </section><!-- /.About 2 -->
 
-    <!-- ======================
+    <!-- =====================
            banner 3
       ========================= -->
     <section id="banner3" class="banner banner-3 p-0 bg-theme">
@@ -80,15 +113,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 background-banner bg-overlay">
             <div class="bg-img"><img src="image/handshake.jpeg" alt="background"></div>
-            <div class="video__btn video__btn-white video__btn-right-center">
-              <a class="popup-video" href="https://www.youtube.com/watch?4=&v=TKnufs85hXk">
-                <span class="video__player-animation"></span>
-                <span class="video__player-animation video__player-animation-2"></span>
-                <div class="video__player">
-                  <i class="fa fa-play"></i>
-                </div>
-              </a>
-            </div><!-- /.video -->
+            <!-- Play button removed for MapMyVisa customization -->
           </div><!-- /.col-lg-6 -->
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="inner-padding">
@@ -123,94 +148,10 @@
       </div><!-- /.container -->
     </section><!-- /.banner 3 -->
 
-    <!-- ======================
+    <!-- =====================
            projects Carousel
       ========================= -->
-    <section id="projectsCarousel" class="projects-carousel">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-50">
-              <span class="heading__subtitle">Latest Case Studies</span>
-              <h2 class="heading__title">Featured Projects</h2>
-              <p class="heading__desc">We presents the following case studies that exemplify the type of solutions and
-                services we are providing across our customer base.</p>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="carousel owl-carousel carousel-dots" data-slide="3" data-slide-md="2" data-slide-sm="1"
-              data-autoplay="true" data-nav="false" data-dots="true" data-space="30" data-loop="true" data-speed="800">
-              <div class="project-item">
-                <div class="project__img">
-                  <img src="assets/images/case-studies/grid/1.jpg" alt="project img">
-                  <div class="project__cat">
-                    <a href="about-us.html#">Analystics</a><a href="about-us.html#">Optimization</a>
-                  </div><!-- /.project-cat -->
-                </div><!-- /.project-img -->
-                <div class="project__content">
-                  <h4 class="project__title"><a href="about-us.html#">Lane Pairing Analysis</a></h4>
-                  <p class="project__desc">We understand that data is the greatest asset when it comes to
-                    analyzing and optimizing your supply chain performance.</p>
-                  <a href="about-us.html#" class="btn btn__secondary btn__link">
-                    <span>Read More</span><i class="icon-arrow-right"></i>
-                  </a>
-                </div><!-- /.project-content -->
-              </div><!-- /.project-item -->
-              <div class="project-item">
-                <div class="project__img">
-                  <img src="assets/images/case-studies/grid/2.jpg" alt="project img">
-                  <div class="project__cat">
-                    <a href="about-us.html#">Warehousing</a><a href="about-us.html#">Distribution</a>
-                  </div><!-- /.project-cat -->
-                </div><!-- /.project-img -->
-                <div class="project__content">
-                  <h4 class="project__title"><a href="about-us.html#">Warehouse Hand Inventory</a></h4>
-                  <p class="project__desc">We understand that data is the greatest asset when it comes to
-                    analyzing and optimizing your supply chain performance.</p>
-                  <a href="about-us.html#" class="btn btn__secondary btn__link">
-                    <span>Read More</span><i class="icon-arrow-right"></i>
-                  </a>
-                </div><!-- /.project-content -->
-              </div><!-- /.project-item -->
-              <div class="project-item">
-                <div class="project__img">
-                  <img src="assets/images/case-studies/grid/3.jpg" alt="project img">
-                  <div class="project__cat">
-                    <a href="about-us.html#">Logistics</a><a href="about-us.html#">Analytics</a>
-                  </div><!-- /.project-cat -->
-                </div><!-- /.project-img -->
-                <div class="project__content">
-                  <h4 class="project__title"><a href="about-us.html#">Minimize Cost Manufacturing</a></h4>
-                  <p class="project__desc">Cost savings is crucial, innovative technology minimizes your overall
-                    spend by utilizing an extensive .</p>
-                  <a href="about-us.html#" class="btn btn__secondary btn__link">
-                    <span>Read More</span><i class="icon-arrow-right"></i>
-                  </a>
-                </div><!-- /.project-content -->
-              </div><!-- /.project-item -->
-              <div class="project-item">
-                <div class="project__img">
-                  <img src="assets/images/case-studies/grid/4.jpg" alt="project img">
-                  <div class="project__cat">
-                    <a href="about-us.html#">Optimization</a><a href="about-us.html#">Warehousing</a>
-                  </div><!-- /.project-cat -->
-                </div><!-- /.project-img -->
-                <div class="project__content">
-                  <h4 class="project__title"><a href="about-us.html#">Regulatory Compliance</a></h4>
-                  <p class="project__desc">Cost savings is crucial, innovative technology minimizes your overall
-                    spend by utilizing an extensive .</p>
-                  <a href="about-us.html#" class="btn btn__secondary btn__link">
-                    <span>Read More</span><i class="icon-arrow-right"></i>
-                  </a>
-                </div><!-- /.project-content -->
-              </div><!-- /.project-item -->
-            </div><!-- /.carousel -->
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.projects-carousel -->
+    <!-- Latest Case Study section removed for MapMyVisa customization -->
 
     <!-- =====================
        Clients 1
@@ -455,8 +396,7 @@
           contact 1
     =========================  -->
     <section id="contact1" class="contact contact-1 p-0">
-      <div id="map"></div>
-      <script src="assets/js/google-map.js"></script>
+      <div id="map"></div>      <script src="js/google-map.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" async defer></script>
       <!-- CLICK HERE (https://developers.google.com/maps/documentation/embed/get-api-key) TO  LERAN MORE ABOUT GOOGLE MAPS API KEY -->
 
@@ -514,7 +454,8 @@
           </div>
         </div><!-- /.contact-panel -->
       </div><!-- /.container -->
-    </section><!-- /.contact 1 -->    <!-- ========================
+    </section><!-- /.contact 1 -->
+    <!-- ========================
       Footer
     ========================== -->
     <div data-include="footer.html"></div>
@@ -525,14 +466,10 @@
         <input type="text" class="search__input" placeholder="Type Words Then Enter">
         <button class="module__search-btn"><i class="fa fa-search"></i></button>
       </form>
-    </div><!-- /.module-search-container -->
-
-    <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
-  </div><!-- /.wrapper -->
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="js/include.js"></script>
+    </div><!-- /.module-search-container -->    <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
+  </div><!-- /.wrapper -->  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

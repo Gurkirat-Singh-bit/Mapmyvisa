@@ -1,5 +1,0 @@
-127.0.0.1 - - [12/Jun/2025 22:45:32] "GET /?id=0dd840c9-55b9-4ef0-8cdf-d29e25673595&vscodeBrowserReqId=1749748532445 HTTP/1.1" 200 -
-127.0.0.1 - - [12/Jun/2025 22:45:32] "GET /assets/js/include.js HTTP/1.1" 304 -
-127.0.0.1 - - [12/Jun/2025 22:45:32] "GET /header.html HTTP/1.1" 304 -
-127.0.0.1 - - [12/Jun/2025 22:45:32] "GET /footer.html HTTP/1.1" 304 -
-127.0.0.1 - - [12/Jun/2025 22:45:48] "GET /about-us.html?id=0dd840c9-55b9-4ef0-8cdf-d29e25673595&vscodeBrowserReqId=1749748548714 HTTP/1.1" 200 -

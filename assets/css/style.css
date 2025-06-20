@@ -1074,9 +1074,7 @@ hr {
   z-index: 1;
 }
 
-.bg-parallax {
-  background-attachment: fixed;
-}
+/* .bg-parallax removed - images now scroll naturally with content instead of staying fixed */
 
 .bg-overlay:before {
   content: "";
@@ -4568,6 +4566,27 @@ textarea.form-control {
   z-index: 2;
 }
 
+/* === MapMyVisa Custom: Fix About section image overlap with header/nav === */
+@media only screen and (min-width: 992px) {
+  .banner-3 .background-banner {
+    margin-top: 100px; /* Height of header/nav */
+  }
+}
+@media only screen and (max-width: 991px) {
+  .banner-3 .background-banner {
+    margin-top: 70px; /* Smaller header on mobile/tablet */
+  }
+}
+
+.banner-3 .background-banner img {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+}
+/* === End MapMyVisa Custom === */
+
 /* Large Size Screens */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .slider .slide__title {
@@ -4703,132 +4722,6 @@ textarea.form-control {
   .slider .carousel-arrows .owl-nav .owl-prev,
   .slider .carousel-arrows .owl-nav .owl-next {
     display: none;
-  }
-}
-
-/*--------------------------
-      Video
---------------------------*/
-.video__btn {
-  position: relative;
-}
-
-.popup-video {
-  text-align: center;
-  display: inline-block;
-  position: relative;
-}
-
-.popup-video .video__player {
-  font-size: 18px;
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
-  border-radius: 50%;
-  background-color: #ff5e14;
-  color: #ffffff;
-  position: relative;
-  display: inline-block;
-}
-
-.popup-video .video__player-animation {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  border: 2px solid #ff5e14;
-  border-radius: 50%;
-  -webkit-animation: pulsing 3s linear 0s infinite;
-  -moz-animation: pulsing 3s linear 0s infinite;
-  -ms-animation: pulsing 3s linear 0s infinite;
-  -o-animation: pulsing 3s linear 0s infinite;
-  animation: pulsing 3s linear 0s infinite;
-}
-
-.popup-video .video__player-animation-2 {
-  animation-delay: 1s;
-}
-
-.popup-video .video__player-animation-3 {
-  animation-delay: 1.8s;
-}
-
-.popup-video .video__player-title {
-  text-transform: uppercase;
-  color: #121c45;
-  font-size: 13px;
-  font-weight: 700;
-  padding-top: 20px;
-  margin-bottom: 0;
-  line-height: 1;
-}
-
-.popup-video:hover .video__player-animation {
-  opacity: 0;
-  animation-play-state: paused;
-}
-
-.video__btn-white .video__player {
-  background-color: #ffffff;
-  color: #ff5e14;
-}
-
-.video__btn-white .video__player-animation {
-  border-color: #ffffff;
-}
-
-.video__btn-left-bottom {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-}
-
-.video__btn-right-center {
-  position: absolute;
-  top: 50%;
-  right: -37px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.video-banner {
-  padding: 225px 0;
-  border-radius: 5px;
-}
-
-@media only screen and (max-width: 992px) {
-  .video__btn-right-center {
-    right: 50%;
-    -webkit-transform: translateX(50%);
-    -moz-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    -o-transform: translateX(50%);
-    transform: translateX(50%);
-  }
-}
-
-/* Mobile Phones and tablets */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .video-banner {
-    padding: 130px 0;
-  }
-
-  .popup-video .video__player {
-    font-size: 18px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
-}
-
-/* Extra Small Devices */
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-  .video-banner {
-    padding: 80px 0;
   }
 }
 
@@ -5662,8 +5555,8 @@ textarea.form-control {
   }
 }
 
-/*----------------------------
-     Testimonial
+/*----------------------------*
+    Testimonial
 ------------------------------*/
 .testimonial-item {
   position: relative;
@@ -6120,10 +6013,6 @@ textarea.form-control {
 
 .blog-item .blog__meta-cat a:last-child {
   padding: 0;
-}
-
-.blog-item .blog__meta-cat a:last-child:after {
-  display: none;
 }
 
 .blog-item .blog__meta-date {
@@ -7599,11 +7488,11 @@ textarea.form-control {
 
 /* Medium screens */
 @media only screen and (max-width: 992px) {
-  .about-1 .video-banner {
-    margin-right: 0;
+  .banner-3 .background-banner {
+    margin-top: 0;
   }
 
-  .about-1 .video-banner img {
+  .banner-3 .background-banner img {
     width: 100%;
   }
 }
@@ -7881,5 +7770,27 @@ textarea.form-control {
 @media only screen and (min-width: 320px) and (max-width: 575px) {
   #map {
     height: 300px;
+  }
+}
+
+/* ===========================================
+   MapMyVisa Custom Fixes
+   =========================================== */
+
+/* Fix for about-us.html image overlap with header */
+.about-page .about__img {
+  margin-top: 200px !important; /* Increased from 150px to prevent header overlap */
+}
+
+/* Responsive adjustments for mobile devices */
+@media only screen and (max-width: 991px) {
+  .about-page .about__img {
+    margin-top: 120px !important; /* Smaller margin for tablets and mobile */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-page .about__img {
+    margin-top: 100px !important; /* Even smaller margin for mobile phones */
   }
 }

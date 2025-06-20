@@ -245,4 +245,32 @@ $(function () {
         fadeDuration: 300
     });
 
+    /*==========   Active Navigation Link   ==========*/
+    function setActiveNavLink() {
+        var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        currentPage = currentPage.split('?')[0]; // Remove query parameters
+        
+        $('.nav__item-link').each(function() {
+            var href = $(this).attr('href');
+            if (href && href.split('?')[0] === currentPage) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        });
+    }
+    
+    // Set active nav link on page load
+    setActiveNavLink();
+    
+    // Handle nav link clicks for smooth transitions
+    $('.nav__item-link').on('click', function(e) {
+        // Only handle internal links (not external or anchors)
+        var href = $(this).attr('href');
+        if (href && !href.startsWith('http') && !href.startsWith('#')) {
+            $('.nav__item-link').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
 });
