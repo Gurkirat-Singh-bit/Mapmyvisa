@@ -26,6 +26,45 @@ $(function () {
     // Global variables
     var $win = $(window);
 
+    /*==========   HTML Include Functionality   ==========*/
+    // Function to handle data-include attributes
+    function loadIncludes() {
+        $('[data-include]').each(function() {
+            var $this = $(this);
+            var file = $this.data('include');
+            
+            if (file) {
+                $.ajax({
+                    url: file,
+                    type: 'GET',
+                    dataType: 'html',
+                    cache: false,
+                    success: function(data) {
+                        $this.html(data);
+                        // Trigger any scripts in the loaded content
+                        $this.find('script').each(function() {
+                            if (this.src) {
+                                // External script
+                                var script = document.createElement('script');
+                                script.src = this.src;
+                                document.head.appendChild(script);
+                            } else {
+                                // Inline script
+                                eval(this.innerHTML);
+                            }
+                        });
+                    },
+                    error: function() {
+                        console.error('Failed to load include file: ' + file);
+                    }
+                });
+            }
+        });
+    }
+    
+    // Load includes on DOM ready
+    loadIncludes();
+
     /*==========   Mobile Menu   ==========*/
     var $navToggler = $('.navbar-toggler');
     $navToggler.on('click', function () {
