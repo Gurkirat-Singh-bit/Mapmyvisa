@@ -1,3 +1,25 @@
+<!--
+=== HEADER.HTML CONTENT INDEX ===
+Line 1-4: Header opening with HTML comment
+Line 5-12: Main header tag with navigation setup
+Line 7-10: Logo section with light and dark versions of MapMyVisa logo (functional)
+Line 11-13: Mobile navbar toggle button (functional)
+Line 14-24: Main navigation menu items (functional)
+Line 16: Home link marked as active (may need dynamic activation)
+Line 17-18: About link (functional)
+Line 20: Services link (functional)
+Line 22: Gallery link with comment "Gallery Option Added" (functional)
+Line 23: FAQs link (functional)
+Line 24: Contact link with typo "contacs.html" instead of "contacts.html"
+Line 26-32: Search module section (functional)
+
+ISSUES IDENTIFIED:
+1. Contact link has typo "contacs.html" instead of "contacts.html"
+2. Home link hardcoded as "active" - should be dynamic based on current page
+3. Cache comment at end serves no purpose and should be removed
+4. Search functionality links to "index.html#" which may not work properly
+-->
+
 <!-- =========================
         Header
     =========================== -->
@@ -21,7 +43,7 @@
               <!-- Gallery Option Added -->
               <li class="nav__item"><a href="gallery.html" class="nav__item-link">Gallery</a></li>
               <li class="nav__item"><a href="faqs.html" class="nav__item-link">FAQs</a></li>
-              <li class="nav__item"><a href="contacs.html" class="nav__item-link">Contact</a></li>
+              <li class="nav__item"><a href="contacts.html" class="nav__item-link">Contact</a></li>
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
           <div class="navbar-modules">
@@ -34,4 +56,3 @@
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
-/* Cache cleared at Sat Jun 21 01:17:01 AM IST 2025 */

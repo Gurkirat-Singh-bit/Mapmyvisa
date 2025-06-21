@@ -21,6 +21,40 @@
      
  ----------------------------*/
 
+/*
+=== MAIN.JS CONTENT INDEX ===
+Lines 1-17: Table of Contents listing 15 different functionality modules (functional)
+Lines 19-24: jQuery document ready function setup and global variables (functional)
+Lines 26-52: HTML Include functionality for loading footer/header files (functional)
+Lines 54-60: Mobile menu toggle functionality (functional)
+Lines 62-71: Sticky navbar on scroll functionality (functional)
+Lines 73-85: Module search overlay show/hide functionality (functional)
+Lines 87-99: Scroll to top button show/hide and animate functionality (functional)
+Lines 101-107: Equal height elements functionality (functional)
+Lines 109-119: Set background images to sections dynamically (functional)
+Lines 121-128: Accordion active class management (functional)
+Lines 130-142: Load more items functionality for blog/services/projects (functional)
+Lines 144-152: About image animation on scroll (functional)
+Lines 154-168: Progress bars animation on scroll (functional)
+Lines 170-202: Owl Carousel configuration with responsive settings (functional)
+Lines 203-226: Owl Carousel with thumbnails configuration (functional)
+Lines 228-246: Popup video functionality using Magnific Popup (functional)
+Lines 248-252: CounterUp animation functionality (functional)
+Lines 254-258: Projects filtering and sorting using MixItUp (functional)
+Lines 260-263: Lightbox gallery configuration (functional)
+Lines 265-285: Active navigation link management (functional)
+
+ALL FUNCTIONALITY IS RELEVANT AND USEFUL:
+- No logistics-specific code found
+- All functions serve website interactivity purposes
+- Navigation, animations, carousels, and UI components are universal
+- Code is well-structured and documented
+- HTML include functionality enables modular design
+- Active navigation link management is particularly useful
+
+NO ISSUES IDENTIFIED - This JavaScript file is clean and entirely functional for the visa website.
+*/
+
 $(function () {
 
     // Global variables

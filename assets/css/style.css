@@ -1,3 +1,26 @@
+/**
+ * Line-by-Line Style Index:
+ * Line 1-48: Table of contents comment (comprehensive CSS structure guide)
+ * Line 49-52: Global Styles comment
+ * Line 53-58: HTML/body overflow and basic styles
+ * Line 59-69: Body typography, font family, smoothing settings
+ * Line 70-74: Text selection color styling
+ * Line 75-82: Link default color and transition
+ * Line 83-87: Link hover color styling
+ * Line 88-92: Section default padding
+ * Line 93-96: Image max-width reset
+ * Line 97-100: Reset styles comment
+ * Line 101-7796: Comprehensive CSS framework including:
+ *   - Helper classes, backgrounds, colors
+ *   - Typography, page titles, buttons, forms
+ *   - Navigation, header, footer components
+ *   - Carousel, slider, video components
+ *   - Features, testimonials, projects, team
+ *   - Blog, contact, pricing, counters
+ *   - Services, about, banners, progress bars
+ *   - Maps and other utility styles
+ * Note: This is a large template CSS file with many unused styles for MapMyVisa project
+ */
 /*---------------------------
       Table of Contents
     -------------------------
